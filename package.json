@@ -1,33 +1,45 @@
 {
     "name": "tsl-easings",
-    "version": "1.0.0",
+    "version": "0.0.1",
+    "type": "module",
     "main": "index.js",
+    "exports": {
+        ".": {
+            "import": "./index.js",
+            "types": "./index.d.ts"
+        }
+    },
+    "files": [
+        "*.js",
+        "*.d.ts"
+    ],
     "scripts": {
+        "test": "node test/index.js"
     },
     "author": "Yuri Artiukh <akella.a@gmail.com> (https://github.com/akella)",
     "license": "MIT",
     "repository": {
-      "type": "git",
-      "url": "git://github.com/akella/tsl-easings.git"
+        "type": "git",
+        "url": "git://github.com/akella/tsl-easings.git"
     },
     "bugs": {
-      "url": "https://github.com/akella/tsl-easings/issues"
+        "url": "https://github.com/akella/tsl-easings/issues"
     },
     "homepage": "https://github.com/akella/tsl-easings",
-    "dependencies": {},
     "devDependencies": {
-      "three": "^0.172.0",
+        "tape": "^5.9.0",
+        "three": "^0.172.0"
     },
     "description": "Robert Penner's easing functions in TSL.",
     "keywords": [
-      "tsl",
-      "transition",
-      "ease",
-      "easing",
-      "animation",
-      "webgl",
-      "webgpu",
-      "threejs",
-      "shader"
+        "tsl",
+        "transition",
+        "ease",
+        "easing",
+        "animation",
+        "webgl",
+        "webgpu",
+        "threejs",
+        "shader"
     ]
-  }
+}

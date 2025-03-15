@@ -1,4 +1,4 @@
-import { pow, Fn, step, mix } from "three/tsl";
+import { pow, Fn, step, mix,float } from "three/tsl";
 
 const easeInOutCubic = Fn(([t]) => {
   let a = float(4).mul(pow(t, 3));
